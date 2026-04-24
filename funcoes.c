@@ -15,7 +15,7 @@ void aumentarCapacidade(ListaCarros *lista)
 	lista->capacidade *=2;
 	Carro *temp = realloc(lista->dados, lista->capacidade*sizeof(Carro));
 	if(temp == NULL)
-		printf("Espaco nao alocado");
+		printf("Espaco nao alocado\n");
 	else
 		lista->dados = temp;
 }
